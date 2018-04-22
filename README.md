@@ -6,7 +6,7 @@ Simple C/C++ Winapi Console application that demonstrates a cursor behavior anom
 ## Bug Summary: 
 When the cursor is moved about programmatically using [SetCursorPos()](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648394%28v=vs.85%29.aspx) some applications are failing to react when the cursor is overhead. It seems like it could be a failure to send WM_MOUSEMOVE. 
   
-The behaviour is recent and did not occur prior to Windows 10 build 15063
+The behaviour is recent and did **not** occur in Windows 10 build 15063 and prior.
 
 ## Video demonstration of the bug:
 https://youtu.be/zEXPD18zE1s  
