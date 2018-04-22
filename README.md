@@ -8,8 +8,9 @@ When the cursor is moved about programmatically using [SetCursorPos()](https://m
   
 The behaviour is recent and did **not** occur in Windows 10 build 15063 and prior.
 
-## Video demonstration of the bug:
+## Video demonstration of the bug (~2 minutes):
 https://youtu.be/zEXPD18zE1s  
+Note: It may be necessary to set the video quality to 1080p to read the text properly. 
 
 ## Example applications where SetCursorPos() exhibits this behavior:
 1. Simple cursor motion above start menu items: The tiles and icons fail to light up, or only do so with a long delay.
