@@ -3,7 +3,8 @@
 ## Purpose: 
 Simple C/C++ Winapi Console application that demonstrates a cursor behavior anomaly present in Windows 10 build 16299 and later. 
 The program reads the arrow keys to update a "cursor position" and then feeds this into SetCursorPos(). In short: The keyboard arrow keys can be used to move the cursor. This allows easy testing of interaction of UI elements beneath the cursor as SetCursorPos() moves it about. You will quickly find that some UI elements fail to "notice" when the cursor is overheard.
-NOTE: Running the sample application with administrative rights makes no difference, so I do not believe this to be security or priveleges related.
+  
+NOTE: Running the sample application with administrative rights makes no difference, so I do not believe this to be security or privileges related.
 
 ## Bug Summary: 
 When the cursor is moved about programmatically using [SetCursorPos()](https://msdn.microsoft.com/en-us/library/windows/desktop/ms648394%28v=vs.85%29.aspx) some applications are failing to react when the cursor is overhead. It seems like it could be a failure to send WM_MOUSEMOVE. 
